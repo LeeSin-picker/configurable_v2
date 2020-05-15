@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hzsiasun.dao.VbChartMapper">
+	<resultMap id="vbchartinfo" type="com.hzsiasun.model.VbChart">
+		<result property="vcID" column="vc_ID" />
+		<result property="vcCode" column="vc_Code" />
+		<result property="vcPageCode" column="vc_PageCode" />
+		<result property="vcChartType" column="vc_ChartType" />
+		<result property="vcWidth" column="vc_Width" />
+		<result property="vcHeight" column="vc_Height" />
+		<result property="vcXaxis" column="vc_Xaxis" />
+		<result property="vcYaxis" column="vc_Yaxis" />
+		<result property="vcData" column="vc_Data" />
+		<result property="vcDataType" column="vc_DataType" />
+		<result property="vcCreateTime" column="vc_CreateTime" />
+		<result property="vcUpdateTime" column="vc_updateTime" />
+		<result property="vcCreater" column="vc_Creater" />
+		<result property="vcTimer" column="vc_Timer" />
+		<result property="vcExParam1" column="vc_ExParam1" />
+		<result property="vcExParam2" column="vc_ExParam2" />
+		<result property="vcExParam3" column="vc_ExParam3" />
+		<result property="vcExParam4" column="vc_ExParam4" />
+		<result property="vcExParam5" column="vc_ExParam5" />
+		<result property="vcTitle" column="vc_Title" />
+		<result property="vcMinX" column="vc_MinX" />
+		<result property="vcMaxX" column="vc_MaxX" />
+		<result property="vcShowType" column="vc_ShowType" />
+		<result property="vcNamespace" column="vc_Namespace" />
+		<result property="vcMethod" column="vc_Method" />
+		<result property="vcParams" column="vc_Params" />
+		<result property="vcWhType" column="vc_WhType" />
+		
+		<result property="vcPercent" column="vc_Percent" />
+		<result property="vcLineTitle" column="vc_LineTitle" />
+		<result property="vcXUnit" column="vc_XUnit" />
+		<result property="vcYUnit" column="vc_YUnit" />
+		<result property="vcExParam6" column="vc_ExParam6" />
+		<result property="vcExParam7" column="vc_ExParam7" />
+		<result property="vcExParam8" column="vc_ExParam8" />
+		<result property="vcExParam9" column="vc_ExParam9" />
+		<result property="vcExParam10" column="vc_ExParam10" />
+
+	
+
+	</resultMap>
+
+	<select id="findAll" resultMap="vbchartinfo">
+		select * from vb_chart
+	</select>
+
+	<insert id="addVbChart"
+		parameterType="com.hzsiasun.model.VbChart">
+		insert into
+		vb_chart(vc_Code,vc_PageCode,vc_ChartType,vc_Width,vc_Height,vc_Xaxis,vc_Yaxis,vc_Data,vc_DataType,
+		vc_CreateTime,vc_Creater,vc_Timer,vc_ExParam1,vc_ExParam2,vc_ExParam3,vc_ExParam4,vc_ExParam5,
+		vc_Title,vc_MinX,vc_MaxX,vc_ShowType,vc_Namespace,vc_Method,vc_Params,vc_WhType,vc_Percent,vc_LineTitle,vc_XUnit,vc_YUnit,
+		vc_ExParam6,vc_ExParam7,vc_ExParam8,vc_ExParam9,vc_ExParam10)
+		values(#{vcCode},#{vcPageCode},#{vcChartType},#{vcWidth},#{vcHeight},#{vcXaxis},#{vcYaxis},#{vcData},#{vcDataType},
+		#{vcCreateTime},#{vcCreater},#{vcTimer},#{vcExParam1},#{vcExParam2},#{vcExParam3},#{vcExParam4},#{vcExParam5},
+		#{vcTitle},#{vcMinX},#{vcMaxX},#{vcShowType},#{vcNamespace},#{vcMethod},#{vcParams},#{vcWhType},#{vcPercent},
+		#{vcLineTitle},#{vcXUnit},#{vcYUnit},#{vcExParam6},#{vcExParam7},#{vcExParam8},#{vcExParam9},#{vcExParam10});
+	</insert>
+
+	<delete id="delVbChart"
+		parameterType="com.hzsiasun.model.VbChart">
+		delete from vb_chart where vc_ID=#{vcID}
+	</delete>
+
+
+	<update id="updateVbChart"
+		parameterType="com.hzsiasun.model.VbChart">
+		update vb_chart
+		<trim prefix="set" suffixOverrides=",">
+			<if test="vcCode!=null">vc_Code=#{vcCode},</if>
+			<if test="vcPageCode!=null">vc_PageCode=#{vcPageCode},</if>
+			<if test="vcChartType!=null">vc_ChartType=#{vcChartType},</if>
+			<if test="vcWidth!=null">vc_Width=#{vcWidth},</if>
+			<if test="vcHeight!=null">vc_Height=#{vcHeight},</if>
+			<if test="vcXaxis!=null">vc_Xaxis=#{vcXaxis},</if>
+			<if test="vcYaxis!=null">vc_Yaxis=#{vcYaxis},</if>
+			<if test="vcData!=null">vc_Data=#{vcData},</if>
+			<if test="vcDataType!=null">vc_DataType=#{vcDataType},</if>
+			<if test="vcUpdateTime!=null">vc_updateTime=#{vcUpdateTime},</if>
+			<if test="vcCreater!=null">vc_Creater=#{vcCreater},</if>
+			<if test="vcTimer!=null">vc_Timer=#{vcTimer},</if>
+			<if test="vcExParam1!=null">vc_ExParam1=#{vcExParam1},</if>
+			<if test="vcExParam2!=null">vc_ExParam2=#{vcExParam2},</if>
+			<if test="vcExParam3!=null">vc_ExParam3=#{vcExParam3},</if>
+			<if test="vcExParam4!=null">vc_ExParam4=#{vcExParam4},</if>
+			<if test="vcExParam5!=null">vc_ExParam5=#{vcExParam5},</if>
+			<if test="vcTitle!=null">vc_Title=#{vcTitle},</if>
+			<if test="vcMinX!=null">vc_MinX=#{vcMinX},</if>
+			<if test="vcMaxX!=null">vc_MaxX=#{vcMaxX},</if>
+			<if test="vcShowType!=null">vc_ShowType=#{vcShowType},</if>
+			<if test="vcNamespace!=null">vc_Namespace=#{vcNamespace},</if>
+			<if test="vcMethod!=null">vc_Method=#{vcMethod},</if>
+			<if test="vcParams!=null">vc_Params=#{vcParams},</if>
+			<if test="vcWhType!=null">vc_WhType=#{vcWhType},</if>
+			
+			<if test="vcPercent!=null">vc_Percent=#{vcPercent},</if>
+			<if test="vcLineTitle!=null">vc_LineTitle=#{vcLineTitle},</if>
+			<if test="vcXUnit!=null">vc_XUnit=#{vcXUnit},</if>
+			<if test="vcYUnit!=null">vc_YUnit=#{vcYUnit},</if>
+			<if test="vcExParam6!=null">vc_ExParam6=#{vcExParam6},</if>
+			<if test="vcExParam7!=null">vc_ExParam7=#{vcExParam7},</if>
+			<if test="vcExParam8!=null">vc_ExParam8=#{vcExParam8},</if>
+			<if test="vcExParam9!=null">vc_ExParam9=#{vcExParam9},</if>
+			<if test="vcExParam10!=null">vc_ExParam10=#{vcExParam10},</if>
+		
+		</trim>
+		WHERE vc_ID=#{vcID}
+	</update>
+
+</mapper>

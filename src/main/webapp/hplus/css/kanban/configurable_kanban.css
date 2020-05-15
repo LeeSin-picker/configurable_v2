@@ -1,0 +1,497 @@
+html {
+    height: 100%;
+    font-size: 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    background-color: #000A14;
+}
+.container {
+	height:100%;
+	width:100%;
+	position:relative;
+	padding:0;
+}
+/* iconfont样式 */
+.dataInputBtn {
+	display: inline-block;
+    margin-left: 10px; 
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+}
+.dataEditBtn {
+	display: inline-block;
+    margin-left: 10px;
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+}
+/* 数据输入框样式 */
+.dataInput {
+	position:absolute;
+	top:89px;
+	left:0px;
+	height:85%;
+	padding:0;
+	background:white;
+	display:none;
+}
+.dataEditInput {
+	position:absolute;
+	top:89px;
+	left:0px;
+	height:85%;
+	padding:0;
+	background:white;
+	display:none;
+}
+.dataInput {
+	width:100%;
+	height:85%;
+	margin-bottom:5px;
+	display:none;
+}
+.dataEditInput #textEditInput,.dataEditInput #wsEditInput,.dataEditInput #imgEditUrl {
+	width:100%!important;
+	height:86%;
+	margin-bottom:5px;
+	display:none;
+	color:black;
+}
+.dataEditInput #wpEditInput {
+    width: 100%;
+    height: 86%;
+    margin-bottom: 5px;
+    display: none;
+    color:#000;
+}
+.dataInput #innerUrl {
+	width:100%!important;
+	height:90%;
+	margin-bottom:5px;
+}
+.dataInput #wsPortInput,.dataInput #wsInput,.dataInput #imgUrl {
+	width:100%!important;
+	height:90%;
+	margin-bottom:5px;
+	display:none;
+	color:black;
+}
+.dataEditInput #sqlEditInput {
+	width:100%!important;
+	height:90%;
+	margin-bottom:5px;
+}
+.dataInput .dataConfirm {
+	float:right;
+	margin-right:10px;
+}
+.dataEditInput .dataEditConfirm {
+	float:right;
+	margin-right:10px;
+}
+/* .dataInput .dataCancel {
+	float:right;
+	margin-right:5px;
+} */
+/*控制面板按钮*/
+.container button.btn-primary {
+    position: absolute;
+    top: 40px;
+    right: 339px;
+    z-index: 500;
+    width: 6%;
+    font-size: 1.3rem;
+    height: 5%;
+    display:none;
+}
+.show {
+    display: block;
+}
+/*控制面板样式*/
+.controlBoard .nav-tabs > li {
+    width: 25%;
+}
+.controlBoard .nav-tabs > li > a {
+    font-size: 1.2rem;
+}
+.controlBoard {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    display: block;
+    z-index: 500;
+    color:#000;
+    height:100%;
+}
+.controlTop {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 16px;
+}
+.ui-jqgrid .ui-jqgrid-bdiv table.table-bordered td {
+	padding:0!important;
+	text-align: center;
+}
+.ui-jqgrid-pager {
+	padding:0!important;
+}
+/*图表创建*/
+.echartsCreate label {
+    font-size: 14px;
+    /* padding-left: 10px; */
+    margin-bottom: 10px;
+    width: 40%;
+    text-align: right;
+}
+.echartsCreate label:first-child {
+    padding-top: 10px;
+
+}
+/* .echartsCreate input {
+    width: 174px;
+} */
+.echartsCreate #setBtn {
+    margin: 10px 20px 30px 100px;
+    width: 50px;
+}
+.echartsCreate .create {
+    margin-top: 10px;
+    width: 50px;
+    margin-bottom: 30px;
+}
+/*图表编辑*/
+.edit label {
+    font-size: 14px;
+   /* padding-left: 10px; */
+    margin-bottom: 10px;
+}
+.edit label:first-child {
+    padding-top: 10px;
+
+}
+.edit input {
+    width: 174px;
+}
+.edit #delBtn {
+    width: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.edit #saveBtn {
+    width: 50px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 34px;
+}
+.flashBtn {
+	margin-top: 10px;
+}
+/* 提示框样式 */
+.ecCue,.eeCue,.ncCue,.neCue {
+	color:black;
+	display:none;
+	width:100%;
+	height:18px;
+	background-color:#f2dede;
+	font-size:13px;
+}
+#noticeCreate label,#noticeEdit label {
+	/* padding-left: 10px; */
+}
+/* x轴最大值最小值设置隐藏 */
+#ecXminLabel,#ecXmin,#ecXmaxLabel,#ecXmax {
+	display:none;
+}
+#eeXminLabel,#eeXmin,#eeXmaxLabel,#eeXmax {
+	display:none;
+}
+
+#eeShowTypeDiv {
+	display:none;
+	color:#000;
+}
+#eeShowTypeDiv label {
+	padding-top:0!important;
+}
+/*头部标题及logo样式*/
+.contain {
+    height: 100%;
+    width: 100%;
+    display:flex;
+}
+.contain div.header {
+    height: 15%;
+    border-bottom: 3px solid #fff;
+}
+.lef {
+    float: left;
+}
+h1, h2, h3, h4, h5, h6, img, div, ul, dl, li, dt, dd, input, button, body, table, tr, th, td {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.contain .header .leftTop img {
+    width: 50%;
+    margin-top: 5%;
+}
+.contain .header .middleTop h2 {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 5%;
+    font-weight: 600;
+    font-size:3rem;
+    color: #7BE8EA;
+    font-weight: bold;
+    text-shadow: 0 0 60px #fff;
+}
+.contain .header .rightTop {
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 31%;
+
+}
+ul, li, dl, dt, dd {
+    list-style: none;
+}
+.contain .header .rightTop li{
+	width: 59%;
+    text-align: right;
+    font-size: 2rem;
+}
+.rig {
+    float: right;
+}
+/* 控制面板文字颜色--black */
+.echartsCreate {
+	color:black;
+}
+/*按钮颜色*/
+/* #setBtn {
+	color:#000;
+} */
+/* input[type=button] {
+	color:black;
+} */
+/* .dataConfirm {
+	color:#000;
+} */
+/* textarea字体颜色 */
+#innerUrl {
+	color:black;
+}
+#wsPortInput,#wsInput {
+	color:black;
+}
+.edit {
+	color:black;
+}
+/* 按钮颜色 */
+/* #delBtn {
+	color:#000;
+}
+#saveBtn {
+	color:#000;
+} */
+/*textarea文字颜色*/
+#textEditInput,#wsEditInput {
+	color:#000;
+}
+#sqlEditInput {
+	color:#000;
+}
+/* .dataEditConfirm {
+	color:#000;
+} */
+#noticeCreate {
+	color:black;
+}
+/* 按钮颜色 */
+/* #noticeCreateBtn {
+	color:black;
+} */
+#noticeEdit {
+	color:black;
+}
+/* 按钮颜色 */
+/* #nEditDelBtn {
+	color:black;
+}
+#nEditSaveBtn {
+	color:black;
+} */
+input {
+	color:black;
+}
+/* kinderEditor编辑器下拉框字体颜色 */
+.ke-menu-item-right {
+	color:#000;
+}
+.ke-dialog-row {
+	color:#000;
+}
+.ke-colorpicker-cell-top {
+	color:#000;
+}
+.tab-content {
+	height:81%;
+	overflow-y:auto;
+}
+.echartsSelectDiv label,.echartsColorDiv label,.colWidthDiv label,.captionSignDiv label,.timerDiv label
+ ,.ecTitleDiv label,.timerDivEdit label,.echartsColorDivEdit label,.colWidthDivEdit label,
+ .captionSignDivEdit label,.eeTitleDiv label,.yListDiv label,.yListEditDiv label,
+ .legendTitleDiv label,.legendTitleDivEdit label{
+	padding-top: 0!important;
+}
+label,select {
+	color:#000!important;
+}
+#echartsColor,#echartsColorEdit {
+	width:25%;
+}
+#baseLine,#baseLineEdit {
+	width:20%;
+}
+.colWidthDiv {
+	display:none;
+}
+.captionIcon,.captionIconEdit {
+	display: inline-block;
+    margin-left: 10px;
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+}
+.captionInput,.captionInputEdit {
+	width:100%;
+	height:86%;
+	margin-bottom:5px;
+	display:none;
+	position:absolute;
+	top:89px;
+	left:0px;
+	padding:0;
+	background:white;
+}
+#captionSignInput,#captionSignInputEdit {
+	width: 100%!important;
+	height: 90%;
+	margin-bottom: 5px;
+	color:#000;
+}
+.captionInputConfirm,.captionConfirmEdit {
+	float: right;
+	margin-right: 10px;
+	/* color:#000; */
+}
+.captionSignDiv {
+	display:none;
+}
+#timer,#timerEdit {
+	width:25%;
+}
+.ui-jqgrid .ui-jqgrid-titlebar {
+	min-height:0!important;
+	padding:0!important;
+}
+.ui-jqgrid .ui-jqgrid-title {
+	padding:0!important;
+}
+.partLeft {
+	position:relative;
+	top:0;
+	left:0;
+	flex:1;
+}
+.partLeft {
+	position:relative;
+	top:0;
+	left:0;
+	flex:1;
+	height:100%;
+}
+.partRight {
+	position:relative;
+	top:0;
+	right:0;
+	width:20%;
+	height:100%;
+	display:none
+}
+.controlBtn {
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	z-index: 1000;
+}
+.ui-jqgrid .ui-jqgrid-htable thead th div {
+	text-align:center;
+}
+.ui-jqgrid .ui-jqgrid-titlebar {
+	text-align:center;
+}
+#legendTitle,#legendTitleEdit {
+	width:40%;
+}
+/* 四角边框css */
+.sqBorder{
+　　background: linear-gradient(to left, #196aa8, #196aa8) left top no-repeat, linear-gradient(to bottom, #196aa8, #196aa8) left top no-repeat, linear-gradient(to left, #196aa8, #196aa8) right top no-repeat, linear-gradient(to bottom, #196aa8, #196aa8) right top no-repeat, linear-gradient(to left, #196aa8, #196aa8) left bottom no-repeat, linear-gradient(to bottom, #196aa8, #196aa8) left bottom no-repeat, linear-gradient(to left, #196aa8, #196AA8) right bottom no-repeat, linear-gradient(to left, #196aa8, #196aa8) right bottom no-repeat;
+    background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px; 
+}
+/* 文本text样式 */
+.textTop,.textBottom {
+	box-sizing: border-box;
+	width:100%;
+	height:100%;
+	text-align:center;
+	font-size:1vw;
+	color:#fff;
+}
+.textTop {
+	padding-top:17%;
+	font-size:1.5vw;
+}
+.textBottom {
+	font-size:2vw;	
+}
+.form-control {
+	display:inline-block;
+	height:27px;
+	padding:0;
+	width: 45%!important;
+}
+select,.form-control {
+	width:45%;
+}
+.edit label {
+    font-size: 14px;
+    /* padding-left: 10px; */
+    margin-bottom: 10px;
+    width: 40%;
+    text-align: right;
+}
+#noticeCreate label {
+	font-size: 14px;
+    /* padding-left: 10px; */
+    margin-bottom: 10px;
+    width: 25%;
+    text-align: right;
+}
+#noticeEdit label {
+	font-size: 14px;
+    /* padding-left: 10px; */
+    margin-bottom: 10px;
+    width: 25%;
+    text-align: right;
+}

@@ -1,0 +1,112 @@
+html{
+	font-size: 12px;
+	-webkit-transform-origin-x: 0;
+	/*-webkit-transform: scale(0.90);*/
+	/*这里导致整体的html页面缩小至0.9倍，不适配所有的设备*/
+}
+
+
+ul,li,dl,dt,dd{
+	list-style: none;
+}
+
+.lef{
+    float:left!important;
+}
+
+
+.margin4 {
+	margin-right: -1.5rem;
+	margin-top: -1.8rem;
+}
+
+.margin6 {
+	margin-top: -0.5rem;
+	
+}
+
+.a2 {
+	font-size: 1rem;
+	color: grdy;
+	margin-top: 1.5rem;
+}
+
+.aImgBox img{
+	width: 5.6rem;
+    float: left;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1.2rem;
+}
+
+.wxTitle,
+.font-bold{
+	font-size:1.2rem;
+}
+
+.productPercentBox{
+	width: 100%;
+	height:32rem;
+	margin:0 auto;
+	/* border-bottom:3px solid #d2d6de; */
+}
+
+
+.productPercentBox4{
+	width: 100%;
+	height:60rem;
+	margin:0 auto;
+	display: none;
+	/* border-bottom:3px solid #d2d6de; */
+}
+
+.productPercentBox .ct1Box,
+.productPercentBox .ct2Box,
+.productPercentBox .ct3Box,
+.productPercentBox .ct4Box{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+}
+
+
+.productPercentBox .ct1Box #ct1, 
+.productPercentBox .ct2Box #ct2,
+.productPercentBox .ct3Box #ct3,
+.productPercentBox .ct4Box #ct4{
+	width:100%;
+	height:90%;
+}
+
+#project-title{
+	font-weight:1.6rem;
+	font-weight:600;
+}
+
+#msg{
+	width:96%;
+	margin:0 auto;
+	padding:0;
+}
+
+#msg li{
+	width:100%;
+	margin-top:1rem;
+}
+
+#msg .msgTitle{
+	margin-top:2rem;
+}
+
+#msg li span.lefMsg{
+	width:30%;
+	font-weight:600;
+}
+
+#msg li p.rigMsg{	
+	width:70%;
+	/* white-space:nowrap; */
+	word-wrap: break-word; 
+	word-break: normal; 
+	font-size:1.1rem;
+}

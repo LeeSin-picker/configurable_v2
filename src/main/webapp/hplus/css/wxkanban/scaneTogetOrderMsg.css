@@ -1,0 +1,64 @@
+.inpMsg{
+    width:100%;
+}
+
+.inpMsg .inpMsgTop,
+.inpMsg .inpMsgBottom{
+    overflow: hidden;
+    margin-top:1rem;
+    width:100%;
+}
+
+.inpMsg .inpMsgTop input:nth-child(1),
+.inpMsg .inpMsgBottom input:nth-child(1){
+    width: 53%;
+    float: left;
+}
+
+.inpMsg .inpMsgTop input:nth-child(2),
+.inpMsg .inpMsgBottom input:nth-child(2){
+    width: 16%;
+    margin-left: 1rem;
+    float: left;
+}
+
+input#clickSeacrh{
+    width: 24%;
+    margin-left: 0.5rem;
+    float: left;
+}
+
+.inpsub{
+    width:100%;
+    padding-left:36%;
+    margin-top:1rem;
+}
+.inpsub input{
+    width:36%;
+    /* margin:0 auto; */
+}
+
+.ulBox{
+    width:100%;
+    height:auto;
+    margin-top:2rem;
+}
+
+.ulBox ul{
+    width:96%;
+}
+
+.ulBox li{
+    width:96%;
+    height:2rem;
+    line-height:2rem;
+    margin:0 auto;
+}
+
+  .ulBox li span:nth-child(1){
+    font-weight:600;
+}
+
+#timestamp,#noncestr,#signature,#id_securityCode_input{
+    display: none!important;
+}
